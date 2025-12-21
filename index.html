@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Home</title>
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <nav class="flex bg-blue-500 py-6 px-10 justify-between items-center text-white">
+        <div>
+            <h1 class="font-bold text-2xl md:text-4xl">ระบบสมาชิก</h1>
+        </div>
+        <div class="flex justify-center gap-7 text-xl">
+            <a href="index.html"
+                class="opacity-100 hover:opacity-50 transition duration-200 cursor-pointer">หน้าหลัก</a>
+            <a href="register.html"
+                class="opacity-50 hover:opacity-100 transition duration-200 cursor-pointer">ลงทะเบียน</a>
+            <a href="profile.html"
+                class="opacity-50 hover:opacity-100 transition duration-200 cursor-pointer">ดูโปรไฟล์</a>
+            <a class="opacity-50 hover:opacity-100 transition duration-200 cursor-pointer">แก้ไขข้อมูล</a>
+        </div>
+    </nav>
+
+
+    <main class="flex-1 mt-15">
+        <div class="bg-white max-w-7xl mx-5 rounded-lg shadow-lg md: mx-auto" id="container">
+            <header class="bg-blue-500 text-white py-4 rounded-t-lg">
+                <h1 class="text-center font-bold text-2xl md:text-3xl">ยินดีต้อนรับสู่ระบบสมาชิก</h1>
+            </header>
+            <section class="flex py-10 px-10 pb-20 flex-col gap-4 justify-center  md:flex-row">
+                <div class="flex-1 rounded-lg py-8 text-center shadow-lg ">
+                    <h2 class="font-bold text-xl md:text-2xl">ลงทะเบียนสมาชิก</h2>
+                    <p>สมัครสมาชิกเพื่อใช้งานระบบ</p>
+                    <a href="register.html"
+                        class="inline-block bg-sky-500 py-2 px-4 mt-4 text-white text-lg rounded-lg hover:bg-sky-600 transition duration-200 cursor-pointer">
+                        ลงทะเบียน
+                    </a>
+
+                </div>
+                <div class="flex-1 rounded-lg py-8 text-center shadow-lg">
+                    <h2 class="font-bold text-xl md:text-2xl">ดูโปรไฟล์</h2>
+                    <p>ดูข้อมูลโปรไฟล์ของคุณ</p>
+                    <a href="proflie.html"
+                        class="inline-block bg-sky-500 py-2 px-4 mt-4 text-white text-lg rounded-lg hover:bg-sky-600 transition duration-200 cursor-pointer">
+                        ดูโปรไฟล์
+                    </a>
+                </div>
+                <div class="flex-1 rounded-lg py-8 text-center shadow-lg">
+                    <h2 class="font-bold text-xl md:text-2xl">แก้ไขข้อมูล</h2>
+                    <p>แก้ไขข้อมูลส่วนตัวของคุณ</p>
+                    <button
+                        class="bg-sky-500 py-2 px-4 mt-4 text-white text-lg rounded-lg hover:bg-sky-600 transition duration-200 cursor-pointer">
+                        แก้ไขข้อมูล
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="flex justify-center items-center bg-gray-700 py-7">
+        <div class="text-white font-xl">
+            <p>© 2025 ระบบสมาชิก</p>
+        </div>
+    </footer>
+</body>
+
+</html>
