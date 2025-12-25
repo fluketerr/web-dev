@@ -18,11 +18,11 @@
             <a href="index.html"
                 class="opacity-50 hover:opacity-100 transition duration-200 cursor-pointer">หน้าหลัก</a>
             <a href="register.html"
-                class="opacity-100 hover:opacity-50 transition duration-200 cursor-pointer">ลงทะเบียน</a>
+                class="opacity-50 hover:opacity-50 transition duration-200 cursor-pointer">ลงทะเบียน</a>
             <a href="profile.html"
                 class="opacity-50 hover:opacity-100 transition duration-200 cursor-pointer">ดูโปรไฟล์</a>
             <a href="editinfo.html"
-                class="opacity-50 hover:opacity-100 transition duration-200 cursor-pointer">แก้ไขข้อมูล</a>
+                class="opacity-100 hover:opacity-50 transition duration-200 cursor-pointer">แก้ไขข้อมูล</a>
         </div>
     </nav>
 
@@ -30,58 +30,67 @@
     <main class="flex-1 mt-16 mb-16">
         <div class="bg-white max-w-6xl mx-auto rounded-lg shadow-lg" id="container">
             <header class="bg-indigo-500 text-white py-4 rounded-t-lg">
-                <h1 class="text-start pl-8 font-bold text-3xl">ลงทะเบียน</h1>
+                <h1 class="text-start pl-8 font-bold text-3xl">แก้ไขข้อมูลส่วนตัว</h1>
             </header>
-            <form class="flex py-10 px-8 flex-col gap-4 justify-center text-lg">
+            <div class="flex flex-col p-4 mt-5 justify-center items-center">
+                <img src="https://mediastreet.ie/wp-content/uploads/2017/08/blank-profile-picture.png" alt=""
+                    class="max-h-46 rounded-full border-1 border-back mb-5">
+                <p>เปลี่ยนรูปโปรไฟล์</p>
+            </div>
+            <form class="flex py-10 px-8 pt-0 flex-col gap-4 justify-center text-lg">
                 <label for="">รูปภาพโปรไฟล์ <span class="text-red-500">*</span></label>
                 <input type="file" name="profile_image" accept="image/*" required
                     class="file:border-1 file:mr-3 file:p-1 file:rounded-lg">
 
                 <label for="fname">ชื่อ <span class="text-red-500">*</span></label>
-                <input type="text" name="fname" id="fname" placeholder="ป้อนชื่อของคุณ" required
+                <input type="text" name="fname" id="fname" value="ยศพัทธ์ " required
                     class="border-1 rounded-xl p-2 border-gray-400/40">
 
                 <label for="lname">นามสกุล <span class="text-red-500">*</span></label>
-                <input type="text" name="lname" id="lname" placeholder="ป้อนนามสกุลของคุณ" required
+                <input type="text" name="lname" id="lname" value="อินทร์ขอ" required
                     class="border-1 rounded-xl p-2 border-gray-400/40">
 
-                <label for="mail">E-mail <span class="text-red-500">*</span></label>
-                <input type="email" name="email" id="mail" placeholder="xxxx@gmail.com" required
+                <label for="user_email">E-mail <span class="text-red-500">*</span></label>
+                <input type="email" name="email" id="user_email" value="yossapat@gmail.com" required
                     class="border-1 rounded-xl p-2 border-gray-400/40">
 
                 <label for="phone">เบอร์โทร <span class="text-red-500">*</span></label>
-                <input type="tel" name="phone" id="phone" placeholder="0XXXXXXXXX" required
+                <input type="tel" name="phone" id="phone" value="0666666" required
                     class="border-1 rounded-xl p-2 border-gray-400/40">
 
                 <label for="birthday">วันเกิด <span class="text-red-500">*</span></label>
-                <input type="date" name="birthday" id="birthday" required
+                <input type="date" name="birthday" id="birthday" value="2005-12-10" required
                     class="border-1 rounded-xl p-2 border-gray-400/40">
 
                 <label for="">เพศ</label>
                 <select name="gender" class="border-1 rounded-xl p-2 border-gray-400/40">
                     <option value="" disabled selected hidden>เลือกเพศ</option>
-                    <option value="man">ชาย</option>
+                    <option value="man" selected>ชาย</option>
                     <option value="women">หญิง</option>
                     <option value="other">อื่นๆ</option>
                 </select>
 
                 <label>ที่อยู่ <span class="text-red-500">*</span></label>
                 <textarea name="address" rows="4" cols="50" placeholder="กรอกที่อยู่" required
-                    class="border-1 rounded-xl p-2 border-gray-400/40"></textarea>
+                    class="border-1 rounded-xl p-2 border-gray-400/40">123 หมู่กัน ตำบล - อำเถอ เมียง จังหวัด แขนก่อน รหัสไปรษณีย์ 40000</textarea>
 
-                <label for="user_password">รหัสผ่าน <span class="text-red-500">*</span></label>
-                <input type="password" name="user_password" id="user_password" placeholder="กำหนดรหัสผ่าน" required
+                <label for="user_password">รหัสผ่านปัจจุบัน (ถ้าต้องการเปลี่ยน)</label>
+                <input type="password" name="user_password" id="user_password" placeholder="ใส่รหัสผ่านปัจจุบัน"
+                    required class="border-1 rounded-xl p-2 border-gray-400/40">
+
+                <label for="user_password">รหัสผ่านใหม่</label>
+                <input type="password" name="ืnew_password" id="new_password" placeholder="กำหนดรหัสผ่านใหม่" required
                     class="border-1 rounded-xl p-2 border-gray-400/40">
 
-                <label for="user_password">ยืนยันรหัสผ่าน <span class="text-red-500">*</span></label>
-                <input type="password" name="confirm_password" id="confirm_password" placeholder="ยืนยันรหัสผ่าน"
-                    required class="border-1 rounded-xl p-2 border-gray-400/40">
+                <label for="user_password">ยืนยันรหัสผ่านใหม่</label>
+                <input type="password" name="confirmNew_password" id="confirmNew_password"
+                    placeholder="ยืนยันรหัสผ่านใหม่" required class="border-1 rounded-xl p-2 border-gray-400/40">
 
                 <div class="flex flex-row gap-3 justify-end text-xl">
                     <button
                         class="bg-gray-500 py-2 px-3 text-white rounded-lg hover:bg-gray-600 transition duration-200 cursor-pointer">ยกเลิก</button>
                     <button
-                        class="bg-indigo-600 py-2 px-4 text-white rounded-lg hover:bg-indigo-700 transition duration-200 cursor-pointer">ยืนยัน</button>
+                        class="bg-indigo-600 py-2 px-4 text-white rounded-lg hover:bg-indigo-700 transition duration-200 cursor-pointer">บันทึกข็อมูล</button>
                 </div>
             </form>
         </div>

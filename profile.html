@@ -9,25 +9,27 @@
 </head>
 
 <body class="flex flex-col min-h-screen">
-    <nav class="flex bg-blue-500 py-6 px-10 justify-between items-center text-white">
+    <nav class="flex bg-gradient-to-r from-indigo-600 to-violet-600 py-6 px-5 justify-between items-center text-white md:px-10 shadow-md">
         <div>
-            <h1 class="font-bold text-4xl">ระบบสมาชิก</h1>
+            <!-- <h1 class="font-bold text-xl md:text-4xl">ระบบสมาชิก</h1> -->
+             <img src="image/logo2.png" alt="" class="h-15">
         </div>
-        <div class="flex justify-center gap-7 text-xl">
+        <div class="flex justify-center gap-7 text-l md:text-xl">
             <a href="index.html"
                 class="opacity-50 hover:opacity-100 transition duration-200 cursor-pointer">หน้าหลัก</a>
             <a href="register.html"
                 class="opacity-50 hover:opacity-100 transition duration-200 cursor-pointer">ลงทะเบียน</a>
             <a href="profile.html"
                 class="opacity-100 hover:opacity-50 transition duration-200 cursor-pointer">ดูโปรไฟล์</a>
-            <a class="opacity-50 hover:opacity-100 transition duration-200 cursor-pointer">แก้ไขข้อมูล</a>
+            <a href="editinfo.html"
+                class="opacity-50 hover:opacity-100 transition duration-200 cursor-pointer">แก้ไขข้อมูล</a>
         </div>
     </nav>
 
 
     <main class="flex-1 my-16">
         <div class="bg-white max-w-7xl mx-auto rounded-lg shadow-[0_10px_20px_rgba(0,0,0,0.15)]" id="container">
-            <header class="flex flex-col justify-center items-center bg-blue-500 text-white py-5 rounded-t-lg">
+            <header class="flex flex-col justify-center items-center bg-indigo-500 text-white py-5 rounded-t-lg">
                 <img src="https://mediastreet.ie/wp-content/uploads/2017/08/blank-profile-picture.png" alt=""
                     class="max-h-46 rounded-full border-1 border-back">
                 <h1 class="mt-4 text-4xl">ยศพัทธ์ อินทร์ขอ</h1>
@@ -73,14 +75,14 @@
                     กลับไปหน้าแรก
                 </button>
                 <button
-                    class="bg-sky-500 px-3 py-2 mb-5 text-white rounded-lg hover:bg-sky-600 transition duration-200 cursor-pointer">
+                    class="bg-indigo-600 px-3 py-2 mb-5 text-white rounded-lg hover:bg-indigo-700 transition duration-200 cursor-pointer">
                     แก้ไขข้อมูล
                 </button>
             </div>
         </div>
     </main>
 
-    <footer class="flex justify-center items-center bg-gray-700 py-7">
+    <footer class="flex justify-center items-center bg-gray-700 py-6">
         <div class="text-white font-xl">
             <p>© 2025 ระบบสมาชิก</p>
         </div>
